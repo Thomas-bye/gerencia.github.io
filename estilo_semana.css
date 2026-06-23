@@ -35,11 +35,15 @@
 
 
 }
-
 header {
-    /* Fondo y Color */
-    background: linear-gradient(135deg, var(--color-guindo), var(--color-azul));
-    color: var(--color-blanco);
+    /* Posicionamiento Fijo (Mantiene su espacio en el flujo de la página) */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    /* Dimensiones y Espaciado Adaptativo */
+    min-height: 70px;
+    padding: 0.8rem 5%; /* % para mejor adaptabilidad en pantallas grandes */
     
     /* Estructura y Alineación (Flexbox) */
     display: flex;
@@ -47,21 +51,22 @@ header {
     align-items: center;
     gap: 1.5rem;
     
-    /* Espaciado y Dimensiones */
-    padding: 1rem 5%; /* % para mejor adaptabilidad en pantallas grandes */
-    min-height: 70px;
+    /* Fondo con degradado institucional usando canales alfa para habilitar el blur */
+    /* Nota: Si tus variables son sólidas, puedes usar color-mix() para darles transparencia */
+    background: linear-gradient(
+        135deg, 
+        color-mix(in srgb, var(--color-guindo) 92%, transparent), 
+        color-mix(in srgb, var(--color-azul) 92%, transparent)
+    );
+    color: var(--color-blanco);
     
-    /* Posicionamiento Fijo (Opcional pero recomendado) */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
-    /* Efectos Visuales Modernos */
+    /* Efectos Visuales Modernos (Cristal / Esmerilado) */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(8px); /* Efecto cristal si hay transparencia */
+    -webkit-backdrop-filter: blur(10px); /* Soporte obligatorio para Apple/Safari */
+    backdrop-filter: blur(10px); 
     
-    /* Rendimiento */
-    will-change: transform;
+    /* Rendimiento y Accesibilidad */
+    transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 
