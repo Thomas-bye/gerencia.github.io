@@ -37,11 +37,33 @@
 }
 
 header {
-    background: linear-gradient(90deg, var(--color-guindo), var(--color-azul));
+    /* Fondo y Color */
+    background: linear-gradient(135deg, var(--color-guindo), var(--color-azul));
     color: var(--color-blanco);
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    
+    /* Estructura y Alineación (Flexbox) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    
+    /* Espaciado y Dimensiones */
+    padding: 1rem 5%; /* % para mejor adaptabilidad en pantallas grandes */
+    min-height: 70px;
+    
+    /* Posicionamiento Fijo (Opcional pero recomendado) */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    /* Efectos Visuales Modernos */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px); /* Efecto cristal si hay transparencia */
+    
+    /* Rendimiento */
+    will-change: transform;
 }
+
 
 /* Listas de temas */
 section ul {
