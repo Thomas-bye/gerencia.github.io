@@ -1,0 +1,121 @@
+/* Estilos exclusivos para las páginas de semanas */
+:root {
+    --color-guindo: #7b1f3d;
+    --color-azul: #1f3d7b;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --color-gris: #f4f4f4;
+    --color-gris-oscuro: #2c2c2c;
+}
+
+/* Encabezado de cada semana */
+#semana1 h2,
+#semana2 h2,
+#semana3 h2,
+#semana4 h2,
+#semana5 h2,
+#semana6 h2,
+#semana7 h2,
+#semana8 h2,
+#semana9 h2,
+#semana10 h2,
+#semana11 h2,
+#semana12 h2,
+#semana13 h2,
+#semana14 h2,
+#semana15 h2,
+#semana16 h2 {
+    color: var(--color-azul);
+    border-left: 6px solid var(--color-guindo);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+
+
+}
+
+header {
+    background: linear-gradient(90deg, var(--color-guindo), var(--color-azul));
+    color: var(--color-blanco);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Listas de temas */
+section ul {
+    background: linear-gradient(135deg, #d4b8b8, #f9f9f9);
+    border: 1px solid var(--color-guindo);
+    border-radius: 8px;
+    padding: 1.2rem;
+    list-style-type: square;
+    box-shadow: 0 2px 8px rgba(188, 167, 167, 0.1);
+}
+
+section ul li {
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+section ul li:hover {
+    color: var(--color-guindo);
+    font-weight: 500;
+}
+
+/* Tarjetas de recursos educativos */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(180deg, #ffffff, #f4f4f4);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    color: var(--color-guindo);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #333;
+}
+
+/* Botón personalizado para recursos */
+.btn-custom {
+    background: linear-gradient(90deg, var(--color-guindo), var(--color-azul));
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(90deg, var(--color-azul), var(--color-guindo));
+    color: #ffd700;
+    /* dorado para resaltar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Actividades */
+section h3 {
+    margin-top: 2rem;
+    color: var(--color-azul);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--color-guindo);
+    padding-bottom: 0.3rem;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+}

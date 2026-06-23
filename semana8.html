@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 8 - Gerencia de Sistemas de Información</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo_semana.css"> <!-- estilos solo para semanas -->
+</head>
+
+<body>
+ 
+    <!-- Encabezado fijo -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">Universidad Peruana Los Andes</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">&#8592; Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="semana7.html">Sem. 7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="semana8.html">Sem. 8</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="semana9.html">Sem. 9</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="container mt-5 pt-3">
+ 
+        <section id="semana8" class="px-4">
+ 
+            <!-- Título -->
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="badge bg-primary" style="background-color:#1f3d7b!important; font-size:0.8rem; padding:0.4rem 0.8rem; border-radius:20px;">UNIDAD II</span>
+                <span class="text-muted" style="font-size:0.9rem;">Semana 8</span>
+            </div>
+            <h2>Semana 8: Nube Híbrida en los Negocios</h2>
+            <p class="lead text-muted">Gestión de aplicaciones y software de nube híbrida para un negocio más inteligente</p>
+ 
+            <!-- INTRO -->
+            <p>
+                La <strong>nube híbrida</strong> combina infraestructura de nube pública, nube privada y entornos
+                locales (on-premise) en un único ecosistema gestionado de forma unificada. Para la gerencia de
+                sistemas de información, representa el modelo de despliegue dominante en las organizaciones modernas,
+                ya que equilibra <em>flexibilidad, control, seguridad y costo</em> según las necesidades de cada
+                proceso de negocio.
+            </p>
+ 
+            <!-- ─── TEMA 1: GESTIÓN DE APLICACIONES ─── -->
+            <h3>1. Gestión de Aplicaciones para la Nube Híbrida</h3>
+ 
+            <!-- Qué es -->
+            <p>
+                La <strong>gestión de aplicaciones en nube híbrida</strong> engloba el conjunto de prácticas,
+                herramientas y procesos que permiten desplegar, monitorear, escalar y mantener aplicaciones
+                distribuidas entre distintos entornos de cómputo de manera coherente y segura.
+            </p>
+ 
+            <!-- Modelos de nube -->
+            <h5>1.1 Los Tres Entornos que Componen la Nube Híbrida</h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #7b1f3d;">
+                        <div style="font-size:2.2rem;">🏢</div>
+                        <h6 class="mt-2" style="color:#7b1f3d;">On-Premise (Local)</h6>
+                        <p class="small mb-0">
+                            Infraestructura física propia de la empresa. Ofrece máximo control y seguridad,
+                            pero con mayor costo de mantenimiento y baja elasticidad. Ideal para datos
+                            sensibles o sistemas críticos regulados.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #1f3d7b;">
+                        <div style="font-size:2.2rem;">🔒</div>
+                        <h6 class="mt-2" style="color:#1f3d7b;">Nube Privada</h6>
+                        <p class="small mb-0">
+                            Infraestructura en la nube dedicada exclusivamente a una organización. Combina
+                            la elasticidad de la nube con el control del entorno propio. Ejemplos: VMware
+                            vSphere, OpenStack, IBM Cloud Private.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #2c7c4e;">
+                        <div style="font-size:2.2rem;">☁️</div>
+                        <h6 class="mt-2" style="color:#2c7c4e;">Nube Pública</h6>
+                        <p class="small mb-0">
+                            Recursos compartidos gestionados por proveedores externos. Alta escalabilidad
+                            y pago por uso. Ideal para cargas de trabajo variables, pruebas y desarrollo.
+                            Ejemplos: AWS, Azure, Google Cloud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Diagrama visual de nube híbrida -->
+            <h5>1.2 Arquitectura de la Nube Híbrida</h5>
+            <div class="p-4 mb-4 rounded-3" style="background: linear-gradient(135deg, #f0f4ff, #f9f0f3); border: 2px dashed #1f3d7b;">
+                <div class="row text-center align-items-center">
+                    <div class="col-md-3">
+                        <div class="p-3 rounded-3 text-white mb-2" style="background:#7b1f3d;">
+                            <div style="font-size:1.8rem;">🏢</div>
+                            <strong>On-Premise</strong>
+                            <p class="small mb-0 mt-1">ERP, bases de datos críticas, sistemas legados</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center" style="font-size:1.8rem; color:#1f3d7b;">⇄</div>
+                    <div class="col-md-4">
+                        <div class="p-3 rounded-3 text-white mb-2" style="background:#1f3d7b;">
+                            <div style="font-size:1.8rem;">🔗</div>
+                            <strong>Capa de Integración</strong>
+                            <p class="small mb-0 mt-1">API Gateway · Middleware · VPN · SD-WAN</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center" style="font-size:1.8rem; color:#1f3d7b;">⇄</div>
+                    <div class="col-md-3">
+                        <div class="p-3 rounded-3 text-white mb-2" style="background:#2c7c4e;">
+                            <div style="font-size:1.8rem;">☁️</div>
+                            <strong>Nube Pública / Privada</strong>
+                            <p class="small mb-0 mt-1">CRM, BI, apps web, IA, almacenamiento</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-muted small mt-3 mb-0">
+                    La capa de integración es el elemento clave: permite que los datos y aplicaciones fluyan de forma segura entre entornos.
+                </p>
+            </div>
+ 
+            <!-- Pilares de gestión -->
+            <h5>1.3 Pilares de la Gestión de Aplicaciones en Nube Híbrida</h5>
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pilar</th>
+                            <th>Descripción</th>
+                            <th>Herramientas típicas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>🚀 Despliegue</strong></td>
+                            <td>Publicación automatizada de aplicaciones en el entorno adecuado (contenedores, VMs o serverless).</td>
+                            <td>Kubernetes, Docker, Terraform, Ansible</td>
+                        </tr>
+                        <tr>
+                            <td><strong>📊 Monitoreo</strong></td>
+                            <td>Supervisión continua del rendimiento, disponibilidad y consumo de recursos en todos los entornos.</td>
+                            <td>Prometheus, Grafana, Datadog, Azure Monitor</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🔒 Seguridad</strong></td>
+                            <td>Control de acceso, cifrado de datos en tránsito y en reposo, gestión de identidades (IAM).</td>
+                            <td>HashiCorp Vault, AWS IAM, Azure AD, CyberArk</td>
+                        </tr>
+                        <tr>
+                            <td><strong>⚖️ Escalado</strong></td>
+                            <td>Ajuste dinámico de recursos según la demanda, evitando sobreaprovisionamiento o cuellos de botella.</td>
+                            <td>Auto Scaling (AWS/Azure), HPA de Kubernetes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>🔗 Integración</strong></td>
+                            <td>Conexión de sistemas locales y en nube mediante APIs, middleware y buses de servicios.</td>
+                            <td>MuleSoft, IBM App Connect, Azure API Management</td>
+                        </tr>
+                        <tr>
+                            <td><strong>💰 FinOps</strong></td>
+                            <td>Gestión y optimización del gasto en nube para maximizar el valor de la inversión tecnológica.</td>
+                            <td>AWS Cost Explorer, Azure Cost Management, CloudHealth</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+ 
+            <!-- Desafíos -->
+            <h5>1.4 Principales Desafíos en la Gestión de Aplicaciones Híbridas</h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <div class="card h-100 p-3" style="border-left: 5px solid #7b1f3d;">
+                        <h6 style="color:#7b1f3d;">⚠️ Complejidad de red y latencia</h6>
+                        <p class="small mb-0">
+                            Mantener baja latencia entre entornos on-premise y la nube requiere diseño cuidadoso
+                            de la red (SD-WAN, ExpressRoute, Direct Connect) y ubicación estratégica de los datos.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-3" style="border-left: 5px solid #1f3d7b;">
+                        <h6 style="color:#1f3d7b;">⚠️ Consistencia de seguridad</h6>
+                        <p class="small mb-0">
+                            Aplicar políticas de seguridad uniformes en múltiples entornos y proveedores es uno
+                            de los mayores retos. Requiere un modelo Zero Trust y gestión centralizada de identidades.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-3" style="border-left: 5px solid #2c7c4e;">
+                        <h6 style="color:#2c7c4e;">⚠️ Visibilidad unificada</h6>
+                        <p class="small mb-0">
+                            Sin herramientas de observabilidad integradas, es difícil rastrear el comportamiento
+                            de una aplicación que corre parcialmente on-premise y parcialmente en la nube.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 p-3" style="border-left: 5px solid #7b5e1f;">
+                        <h6 style="color:#7b5e1f;">⚠️ Cumplimiento normativo</h6>
+                        <p class="small mb-0">
+                            Regular dónde residen los datos es clave en sectores financieros, de salud y gobierno,
+                            especialmente con leyes como la Ley N° 29733 de Protección de Datos en el Perú.
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ─── TEMA 2: SOFTWARE NUBE HÍBRIDA ─── -->
+            <h3>2. Software de Nube Híbrida para un Negocio más Inteligente</h3>
+ 
+            <p>
+                El <strong>software de nube híbrida</strong> va más allá de la infraestructura: incorpora capacidades
+                de <em>inteligencia artificial, automatización, análisis de datos y colaboración</em> que permiten a
+                las organizaciones operar con mayor agilidad, reducir costos y generar ventaja competitiva. Un negocio
+                inteligente no solo migra a la nube, sino que <em>transforma sus procesos</em> aprovechando las
+                capacidades nativas de la nube híbrida.
+            </p>
+ 
+            <!-- Categorías de software -->
+            <h5>2.1 Categorías de Software de Nube Híbrida</h5>
+            <div class="row g-4 mb-4">
+ 
+                <div class="col-md-6">
+                    <div class="card h-100" style="border-top: 4px solid #7b1f3d;">
+                        <div class="card-body">
+                            <h6 style="color:#7b1f3d;">🧠 IA y Machine Learning como servicio</h6>
+                            <p class="small">
+                                Plataformas que permiten entrenar modelos de IA con datos locales y ejecutarlos
+                                en la nube, o viceversa. Habilitan predicciones de demanda, detección de fraudes,
+                                mantenimiento predictivo y personalización de servicios.
+                            </p>
+                            <ul class="small mb-0">
+                                <li>Azure Machine Learning</li>
+                                <li>Google Vertex AI</li>
+                                <li>AWS SageMaker</li>
+                                <li>IBM Watson Studio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-md-6">
+                    <div class="card h-100" style="border-top: 4px solid #1f3d7b;">
+                        <div class="card-body">
+                            <h6 style="color:#1f3d7b;">📊 Plataformas de Datos e Integración</h6>
+                            <p class="small">
+                                Soluciones que unifican fuentes de datos on-premise y en la nube en un único
+                                lago de datos o data warehouse, facilitando reportes, dashboards en tiempo real
+                                y analítica avanzada para la gerencia.
+                            </p>
+                            <ul class="small mb-0">
+                                <li>Azure Synapse Analytics</li>
+                                <li>Google BigQuery Omni</li>
+                                <li>AWS Outposts + Redshift</li>
+                                <li>Snowflake (multicloud)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-md-6">
+                    <div class="card h-100" style="border-top: 4px solid #2c7c4e;">
+                        <div class="card-body">
+                            <h6 style="color:#2c7c4e;">⚙️ Automatización de Procesos (RPA + Cloud)</h6>
+                            <p class="small">
+                                La automatización robótica de procesos (RPA) combinada con la nube híbrida
+                                permite automatizar tareas repetitivas (facturación, conciliaciones, reportes)
+                                con bots que operan tanto en sistemas locales como en aplicaciones en la nube.
+                            </p>
+                            <ul class="small mb-0">
+                                <li>UiPath (cloud + on-premise)</li>
+                                <li>Microsoft Power Automate</li>
+                                <li>Automation Anywhere</li>
+                                <li>SAP Intelligent RPA</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col-md-6">
+                    <div class="card h-100" style="border-top: 4px solid #7b5e1f;">
+                        <div class="card-body">
+                            <h6 style="color:#7b5e1f;">🤝 Colaboración y Productividad</h6>
+                            <p class="small">
+                                Suites de colaboración en la nube que integran comunicación, gestión de documentos
+                                y flujos de trabajo, accesibles desde cualquier entorno. Habilitan el trabajo
+                                remoto e híbrido en equipos distribuidos.
+                            </p>
+                            <ul class="small mb-0">
+                                <li>Microsoft 365 + Teams</li>
+                                <li>Google Workspace</li>
+                                <li>Slack + Salesforce</li>
+                                <li>Zoom + integración ERP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Casos de uso -->
+            <h5>2.2 Casos de Uso: Nube Híbrida para un Negocio Inteligente</h5>
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sector</th>
+                            <th>Caso de Uso</th>
+                            <th>Componente Híbrido</th>
+                            <th>Beneficio Obtenido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Banca / Finanzas</strong></td>
+                            <td>Detección de fraudes en tiempo real</td>
+                            <td>Modelos IA en nube + datos transaccionales on-premise</td>
+                            <td>Reducción del 40% en fraudes sin exponer datos a terceros</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Retail / Comercio</strong></td>
+                            <td>Gestión de inventario predictivo</td>
+                            <td>IoT en tiendas + SCM en nube pública</td>
+                            <td>Reducción de quiebres de stock y sobreinventario</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salud</strong></td>
+                            <td>Historiales clínicos con IA diagnóstica</td>
+                            <td>Datos sensibles on-premise + procesamiento IA en nube privada</td>
+                            <td>Diagnósticos más rápidos con cumplimiento normativo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Manufactura</strong></td>
+                            <td>Mantenimiento predictivo de maquinaria</td>
+                            <td>Sensores IoT locales + análisis ML en la nube</td>
+                            <td>Reducción de paradas no planificadas hasta un 30%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gobierno</strong></td>
+                            <td>Servicios ciudadanos digitales</td>
+                            <td>Front-end en nube pública + datos soberanos on-premise</td>
+                            <td>Mayor accesibilidad con control total de los datos públicos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+ 
+            <!-- Proveedores líderes -->
+            <h5>2.3 Plataformas de Nube Híbrida Líderes en el Mercado</h5>
+            <div class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #FF9900;">
+                        <div style="font-size:2rem;">🟠</div>
+                        <h6 class="mt-1">AWS Outposts</h6>
+                        <p class="small mb-0">Extiende la infraestructura AWS al centro de datos propio del cliente.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #0078D4;">
+                        <div style="font-size:2rem;">🔵</div>
+                        <h6 class="mt-1">Azure Arc</h6>
+                        <p class="small mb-0">Gestión unificada de recursos en cualquier nube o entorno local desde Azure.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #4285F4;">
+                        <div style="font-size:2rem;">🟢</div>
+                        <h6 class="mt-1">Google Anthos</h6>
+                        <p class="small mb-0">Plataforma multicloud y on-premise para gestión de aplicaciones en contenedores.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100 text-center p-3" style="border-top: 4px solid #0530AD;">
+                        <div style="font-size:2rem;">🟣</div>
+                        <h6 class="mt-1">IBM Cloud Pak</h6>
+                        <p class="small mb-0">Suite empresarial con IA integrada para nube híbrida basada en Red Hat OpenShift.</p>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ─── RECURSOS ─── -->
+            <h3>3. Recursos Educativos</h3>
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">🎬 Video: ¿Qué es la Nube Híbrida?</h5>
+                            <p class="card-text small flex-grow-1">
+                                Explicación visual de cómo funciona la nube híbrida, sus componentes y por qué
+                                es el modelo preferido por las grandes empresas.
+                            </p>
+                            <a href="https://www.youtube.com/results?search_query=que+es+nube+hibrida+empresas" target="_blank" class="btn btn-custom mt-auto">Ver Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">🎬 Video: Azure Arc y Nube Híbrida</h5>
+                            <p class="card-text small flex-grow-1">
+                                Demostración de cómo Microsoft Azure Arc permite gestionar aplicaciones en
+                                entornos híbridos de forma unificada desde un solo panel de control.
+                            </p>
+                            <a href="https://www.youtube.com/results?search_query=azure+arc+nube+hibrida+gestion" target="_blank" class="btn btn-custom mt-auto">Ver Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">📄 Lectura: Erl, T. (2013) — Cloud Computing</h5>
+                            <p class="card-text small flex-grow-1">
+                                Referencia bibliográfica del curso. Fundamentos de computación en la nube,
+                                modelos de servicio (IaaS, PaaS, SaaS) y patrones de arquitectura híbrida.
+                            </p>
+                            <a href="https://books.google.com.pe" target="_blank" class="btn btn-custom mt-auto">Leer Documento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ─── ACTIVIDAD ─── -->
+            <div class="p-4 rounded-3 text-white" style="background: linear-gradient(90deg, #7b1f3d, #1f3d7b);">
+                <h5 style="color:#ffd700;">📝 Actividad de la Semana</h5>
+                <p class="mb-1">
+                    Analiza una empresa del sector que te interese y propón una <strong>arquitectura de nube híbrida</strong>
+                    para ella. Debes indicar: <strong>(1)</strong> qué sistemas o datos permanecerían on-premise y por qué,
+                    <strong>(2)</strong> qué aplicaciones migrarías a la nube pública o privada,
+                    <strong>(3)</strong> qué software de nube híbrida usarías (IA, automatización, datos) y
+                    <strong>(4)</strong> qué beneficio concreto obtendría el negocio.
+                </p>
+                <small style="color:#ffd700;">Entrega: inicio de la Semana 9 · Formato: informe en Word con diagrama de arquitectura</small>
+            </div>
+ 
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 Universidad Peruana Los Andes | Gerencia de Sistemas de Información</p>
+    </footer>
+ 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

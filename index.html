@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sílabo - Gerencia de Sistemas de Información</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+            style="background: linear-gradient(90deg, #7b1f3d, #1f3d7b);">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Universidad Peruana Los Andes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+                    aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContenido">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <!-- Contenido -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="contenidoDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contenido
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="contenidoDropdown">
+                                <li><a class="dropdown-item" href="#informacion">I. Información General</a></li>
+                                <li><a class="dropdown-item" href="#sumilla">II. Sumilla</a></li>
+                                <li><a class="dropdown-item" href="#competencia-general">III. Competencia General</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#competencia-especifica">IV. Competencia
+                                        Específica</a></li>
+                                <li><a class="dropdown-item" href="#capacidades">V. Capacidades</a></li>
+                                <li><a class="dropdown-item" href="#ejes">VI. Ejes Transversales</a></li>
+                                <li><a class="dropdown-item" href="#programacion">VII. Programación</a></li>
+                                <li><a class="dropdown-item" href="#evaluacion">VIII. Evaluación</a></li>
+                                <li><a class="dropdown-item" href="#bibliografia">IX. Bibliografía</a></li>
+                            </ul>
+                        </li>
+                        <!--sección 1- unidad 1, semanas 1-4-->
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="semanasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UNIDAD I
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="semanasDropdown">
+                                <li><a class="dropdown-item" href="semana1.html">Semana 01</a></li>
+                                <li><a class="dropdown-item" href="semana2.html">Semana 02</a></li>
+                                <li><a class="dropdown-item" href="semana3.html">Semana 03</a></li>
+                                <li><a class="dropdown-item" href="semana4.html">Semana 04</a></li>
+                                
+                            </ul>
+
+                        </li>
+                        <!--sección 1- unidad 2, semanas 5-8-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="semanasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UNIDAD II
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="semanasDropdown">
+                                <li><a class="dropdown-item" href="semana5.html">Semana 05</a></li>
+                                <li><a class="dropdown-item" href="semana6.html">Semana 06</a></li>
+                                <li><a class="dropdown-item" href="semana7.html">Semana 07</a></li>
+                                <li><a class="dropdown-item" href="semana8.html">Semana 08</a></li>
+                                <!-- ... hasta Semana 16 -->
+                                <li><a class="dropdown-item" href="#">EVA</a></li>
+                            </ul>
+
+                        </li>
+                        <!--sección 1- unidad 3, semanas 7-12-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="semanasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UNIDAD III
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="semanasDropdown">
+                                <li><a class="dropdown-item" href="semana9.html">Semana 09</a></li>
+                                <li><a class="dropdown-item" href="semana10.html">Semana 10</a></li>
+                                <li><a class="dropdown-item" href="semana11.html">Semana 11</a></li>
+                                <li><a class="dropdown-item" href="semana12.html">Semana 12</a></li>
+                                <!-- ... hasta Semana 16 -->
+                                <li><a class="dropdown-item" href="semana16.html">Semana 16</a></li>
+                            </ul>
+
+                        </li>
+                        <!--sección 1- unidad 4, semanas 13-16-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="semanasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                UNIDAD IV
+                            </a>
+                         
+                        </li>
+
+                        <!-- Libros -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="librosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Libros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="librosDropdown">
+                                <li><a class="dropdown-item" href="#bibliografia">Lapiedra Alcamí, R. et al. (2016)</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#bibliografia">Joyanes Aguilar, L. (2012)</a></li>
+                                <li><a class="dropdown-item" href="#bibliografia">Erl, T. (2013)</a></li>
+                                <li><a class="dropdown-item" href="#bibliografia">Arjonilla Domínguez, S. & Medina
+                                        Garrido, J. (2013)</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- I -->
+        <section id="informacion">
+            <h2>I. Información General</h2>
+            <p><strong>Curso:</strong> Gerencia de Sistemas de Información</p>
+            <p><strong>Docente:</strong> Dr. Magno Teófilo Baldeón Tovar</p>
+            <p><strong>Semestre académico:</strong> VII Ciclo</p>
+            <p><strong>Plan de estudios:</strong> 2022</p>
+            <p><strong>Área:</strong> Estudios de Especialidad</p>
+            <p><strong>Naturaleza:</strong> Teórico - Práctico</p>
+            <p><strong>Créditos:</strong> 3</p>
+            <p><strong>Horas semanales:</strong> 4 (2 teóricas, 2 prácticas)</p>
+            <p><strong>Período académico:</strong> 2026 - I</p>
+        </section>
+
+        <!-- II -->
+        <section id="sumilla">
+            <h2>II. Sumilla</h2>
+            <p>La asignatura corresponde a estudios de especialidad, de naturaleza teórico-práctica, cuyo propósito es
+                gerenciar un marco de trabajo para el buen gobierno y la gestión de las tecnologías de la información
+                (TI) y la tecnología de la empresa. Que le permite adquirir las siguientes capacidades: conoce la
+                administración y la empresa en la nube, infraestructura de TI y tecnologías emergentes, genera la
+                obtención de la excelencia operacional e intimidad con el cliente: aplicaciones empresariales,
+                identifica la infraestructura de la Tecnología de la Información, propone la creación de sistemas de
+                información.</p>
+        </section>
+
+        <!-- III -->
+        <section id="competencia-general">
+            <h2>III. Competencia General</h2>
+            <p>Usa las tecnologías de información y comunicación para el análisis y diseño de los sistemas
+                organizacionales desde los esquemas conceptuales hasta los diseños físicos...</p>
+        </section>
+
+        <!-- IV -->
+        <section id="competencia-especifica">
+            <h2>IV. Competencia Específica</h2>
+            <p>Implementar un sistema de gestión de calidad, con el fin de satisfacer las necesidades del cliente
+                interno y externo, para optimizar los procesos y recursos disponibles de la empresa.</p>
+        </section>
+
+        <!-- V -->
+        <section id="capacidades">
+            <h2>V. Capacidades</h2>
+            <ul>
+                <li>Conoce la administración y la empresa en la nube, infraestructura de TI y tecnologías emergentes.
+                </li>
+                <li>Genera la obtención de la excelencia operacional e intimidad con el cliente.</li>
+                <li>Identifica la infraestructura de la Tecnología de la Información.</li>
+                <li>Propone la creación de sistemas de información.</li>
+            </ul>
+        </section>
+
+        <!-- VI -->
+        <section id="ejes">
+            <h2>VI. Ejes Transversales</h2>
+            <p>Investigación – Desarrollo – Innovación</p>
+            <p>Responsabilidad social</p>
+            <p>Sostenibilidad del medio ambiente</p>
+
+            <h3>Valores y Actitudes</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Valores</th>
+                            <th>Actitudes</th>
+                            <th>Indicadores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Búsqueda de la excelencia</td>
+                            <td>Respeta la opinión de los demás compañeros. Sigue las normas de la universidad y del
+                                docente. Presenta trabajos originales en la fecha programada.</td>
+                            <td>Escucha las opiniones de los demás, aunque no las comparta. Asiste puntualmente.
+                                Presenta tareas con puntualidad.</td>
+                        </tr>
+                        <tr>
+                            <td>Preservación Ambiental</td>
+                            <td>Promueve estilos de vida saludables y sostenibles.</td>
+                            <td>Disposición para colaborar con el bienestar de las generaciones presentes y futuras.
+                                Aprecio por el cuidado de toda forma de vida.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- VII -->
+        <section id="programacion">
+            <h2>VII. Programación del Desarrollo de Capacidades</h2>
+
+            <!-- Unidad I -->
+            <h3>Unidad I: Administración en la Nube</h3>
+            <p><strong>Capacidad:</strong> Conoce la administración y la empresa en la nube, infraestructura de TI y
+                tecnologías emergentes, para gestionar adecuadamente.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Desempeños</th>
+                            <th>Estrategias didácticas</th>
+                            <th>Evidencias productos</th>
+                            <th>Av. %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>La información en la empresa. Sistemas de Información. Tipos de sistemas de información.
+                                Componentes de los sistemas de información.</td>
+                            <td rowspan="4">Método de estudio de casos. Discusiones en clase. Lluvia de ideas.
+                                Aprendizaje colaborativo.</td>
+                            <td rowspan="4">Interactúa con sus compañeros para definir las clases de computación y
+                                administración en la nube.</td>
+                            <td>06.25%</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Computación en la nube. Modelos de Despliegue.</td>
+                            <td>12.50%</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>Administración en la nube. Funciones. Tecnología.</td>
+                            <td>18.75%</td>
+                        </tr>
+                        <tr>
+                            <td>04</td>
+                            <td>Infraestructura de TI. Modelos de despliegue. Componentes. Tipos de infraestructura de
+                                TI.</td>
+                            <td>25%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Bibliografía:</strong> Lapiedra Alcamí, R. et al. (2016)... Joyanes Aguilar, L. (2012)... Erl, T.
+                (2013)... Arjonilla Domínguez, S. & Medina Garrido, J. (2013)...</p>
+
+            <!-- Unidad II -->
+            <h3>Unidad II: Aplicaciones Empresariales de Sistemas de Información</h3>
+            <p><strong>Capacidad:</strong> Genera la obtención de la excelencia operacional e intimidad con el cliente:
+                aplicaciones empresariales, para mejorar la relación y satisfacción con el cliente.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Desempeños</th>
+                            <th>Estrategias didácticas</th>
+                            <th>Evidencias productos</th>
+                            <th>Av. %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>05</td>
+                            <td>Los sistemas de información en los negocios. Fundamentos de inteligencia de negocios:
+                                bases de datos y administración de la información.</td>
+                            <td rowspan="3">Método de estudio de casos. Discusiones en clase. Lluvia de ideas.
+                                Aprendizaje colaborativo.</td>
+                            <td rowspan="3">Elabora un trabajo sobre estructura informática para una empresa. Interactúa
+                                con sus compañeros para Gestión de Relaciones con el Cliente (CRM).</td>
+                            <td>31.25%</td>
+                        </tr>
+                        <tr>
+                            <td>06</td>
+                            <td>Diseño de la Estructura Informática Integral de los Sistemas de Información Gerencial.
+                                (Tres Planos: EPS).</td>
+                            <td>37.50%</td>
+                        </tr>
+                        <tr>
+                            <td>07</td>
+                            <td>Aplicaciones empresariales y EAS. Usos comunes de las aplicaciones empresariales y EAS.
+                                Tipos de sistemas de información empresarial: CRM, SCM, ERP, SIG.</td>
+                            <td>43.75%</td>
+                        </tr>
+                        <tr>
+                            <td>08</td>
+                            <td colspan="3">Gestión de aplicaciones para la nube híbrida. Software de nube híbrida para
+                                un negocio más inteligente. Consolidado de la evaluación formativa y sumativa (I – II
+                                UNIDAD). Examen Parcial.</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Bibliografía:</strong> Lapiedra Alcamí, R. et al. (2016)... Joyanes Aguilar, L. (2012)... Erl, T.
+                (2013)... Arjonilla Domínguez, S. & Medina Garrido, J. (2013)...</p>
+
+            <!-- Unidad III -->
+            <h3>Unidad III: Infraestructura de Tecnologías de Información</h3>
+            <p><strong>Capacidad:</strong> Identifica la infraestructura de la Tecnología de la Información para ser
+                aplicada en la organización.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Desempeños</th>
+                            <th>Estrategias didácticas</th>
+                            <th>Evidencias productos</th>
+                            <th>Av. %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09</td>
+                            <td>Gobierno de TI. Alineamiento estratégico de TI con los objetivos de la empresa, creación
+                                de valor. Gestión de procesos.</td>
+                            <td rowspan="4">Método de estudio de casos. Discusiones en clase. Lluvia de ideas.
+                                Aprendizaje colaborativo.</td>
+                            <td rowspan="4">Elabora un cuadro con misión, visión y objetivos de la empresa y de los
+                                servicios de TI. Interactúa con sus compañeros para realizar un caso de gestión de
+                                eventos, incidencias y problemas.</td>
+                            <td>56.25%</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Gestión de servicios. Estrategia del servicio.</td>
+                            <td>62.50%</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Diseño del servicio. Transición del servicio.</td>
+                            <td>68.75%</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Gestión del cambio. Gestión del conocimiento. Gestión de eventos, incidencias y
+                                problemas. Centro de servicio.</td>
+                            <td>75%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Bibliografía:</strong> Lapiedra Alcamí, R. et al. (2016)... Joyanes Aguilar, L. (2012)... Erl, T.
+                (2013)... Arjonilla Domínguez, S. & Medina Garrido, J. (2013)...</p>
+
+            <!-- Unidad IV -->
+            <h3>Unidad IV: Desarrollo de Sistemas de Información en la Empresa</h3>
+            <p><strong>Capacidad:</strong> Propone la creación de sistemas de información, para mejorar los sistemas de
+                información.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Semana</th>
+                            <th>Desempeños</th>
+                            <th>Estrategias didácticas</th>
+                            <th>Evidencias productos</th>
+                            <th>Av. %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>13</td>
+                            <td>El ciclo de vida del desarrollo de sistemas. Metodología para el Desarrollo de Sistemas
+                                de Información.</td>
+                            <td rowspan="3">Método de estudio de casos. Discusiones en clase. Lluvia de ideas.
+                                Aprendizaje colaborativo.</td>
+                            <td rowspan="3">Interactúa con sus compañeros para realizar la implementación de un sistema
+                                de información para una empresa.</td>
+                            <td>81.25%</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Implementación de sistemas de información.</td>
+                            <td>87.50%</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Exposición de un proyecto práctico de sistemas de información en una empresa.</td>
+                            <td>93.75%</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td colspan="3">Evaluación Final. Consolidado de la evaluación formativa (III–IV UNIDAD) y
+                                sumativa.</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Bibliografía:</strong> Lapiedra Alcamí, R. et al. (2016)... Joyanes Aguilar, L. (2012)... Erl, T.
+                (2013)... Arjonilla Domínguez, S. & Medina Garrido, J. (2013
+
+                <!-- VIII -->
+            <section id="evaluacion">
+                <h2>VIII. Sistema de Evaluación</h2>
+                <p>La evaluación es integral, continua, permanente y de carácter justo, democrático y pertinente...</p>
+                <!-- tabla completa del documento -->
+                <p><strong>Requisitos de aprobación:</strong> Cumplir reglamento académico vigente, promedio mínimo
+                    10.5,
+                    autoevaluación, coevaluación, heteroevaluación, examen complementario con pago correspondiente.</p>
+            </section>
+
+            <!-- IX -->
+            <section id="bibliografia">
+                <h2>IX. Bibliografía</h2>
+                <ul>
+                    <li>Lapiedra Alcamí, R. et al. (2016). Introducción a la gestión de sistemas de información en la
+                        empresa.</li>
+                    <li>Joyanes Aguilar, L. (2012). Computación en la nube: Estrategias de Cloud Computing en las
+                        empresas.
+                    </li>
+                    <li>Erl, T. (2013). Cloud Computing: Concepts, Technology & Architecture.</li>
+                    <li>Arjonilla Domínguez, S. & Medina Garrido, J. (2013). La gestión de los sistemas de información
+                        en la
+                        empresa.</li>
+                </ul>
+            </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Universidad Peruana Los Andes | Gerencia de Sistemas de Información</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

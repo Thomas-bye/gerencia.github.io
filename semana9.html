@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 9 - Gerencia de Sistemas de Información</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo_semana.css"> <!-- estilos solo para semanas -->
+</head>
+
+<body>
+ 
+    <!-- Encabezado fijo -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="index.html">Universidad Peruana Los Andes</a>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">&#8592; Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="semana8.html">Sem. 8</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="semana9.html">Sem. 9</a></li>
+                    <li class="nav-item"><a class="nav-link" href="semana10.html">Sem. 10</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+ 
+    <main class="container mt-5 pt-3">
+        <section id="semana9" class="px-4">
+ 
+            <!-- Título -->
+            <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="badge bg-primary" style="background-color:#1f3d7b!important; font-size:0.8rem; padding:0.4rem 0.8rem; border-radius:20px;">UNIDAD III</span>
+                <span class="text-muted" style="font-size:0.9rem;">Semana 9</span>
+            </div>
+            <h2>Semana 9: Gobierno de TI, Alineamiento Estratégico y Gestión de Procesos</h2>
+            <p class="lead text-muted">
+                Cómo la tecnología de información se gobierna, se alinea con la estrategia empresarial
+                y se traduce en procesos de valor para la organización.
+            </p>
+ 
+            <!-- ─── MENÚ DE TEMAS ─── -->
+            <nav class="menu-temas" aria-label="Temas de la semana">
+                <a href="#tema1" class="tema-1">🏛️ 1. Gobierno de TI</a>
+                <a href="#tema2" class="tema-2">🎯 2. Alineamiento Estratégico y Creación de Valor</a>
+                <a href="#tema3" class="tema-3">⚙️ 3. Gestión de Procesos</a>
+            </nav>
+ 
+            <!-- ══════════════════════════════════════
+                 TEMA 1: GOBIERNO DE TI
+            ══════════════════════════════════════ -->
+            <div id="tema1">
+                <div class="tema-header th-guindo">
+                    <span class="numero">01</span>
+                    <div>
+                        <h3>Gobierno de TI</h3>
+                        <p>Estructuras, marcos y responsabilidades para dirigir y controlar la tecnología de información</p>
+                    </div>
+                </div>
+ 
+                <p>
+                    El <strong>Gobierno de TI</strong> es el sistema por el cual se dirige y controla el uso
+                    de la tecnología de información en una organización. Establece <em>quién toma las decisiones
+                    sobre TI, cómo se toman y cómo se rinde cuentas</em> por sus resultados. No es una función
+                    técnica, sino una responsabilidad de la alta dirección: el Directorio y la Gerencia General
+                    son los principales responsables de que TI genere valor y no represente un riesgo no gestionado.
+                </p>
+ 
+                <div class="bloque">
+                    <h5 style="color:#7b1f3d;">¿Por qué es necesario el Gobierno de TI?</h5>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 text-center h-100" style="background:#f9f0f3;">
+                                <div style="font-size:1.8rem;">💸</div>
+                                <p class="small mb-0 mt-2">Las inversiones en TI representan entre el <strong>3% y 10%</strong> del presupuesto empresarial y deben rendir resultados medibles.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 text-center h-100" style="background:#f9f0f3;">
+                                <div style="font-size:1.8rem;">⚖️</div>
+                                <p class="small mb-0 mt-2">Regulaciones como <strong>SOX, ISO 27001, Basilea III</strong> y la Ley 29733 en Perú exigen controles formales sobre TI.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 rounded-3 text-center h-100" style="background:#f9f0f3;">
+                                <div style="font-size:1.8rem;">🔗</div>
+                                <p class="small mb-0 mt-2">Sin gobierno, TI opera como un <strong>silo desconectado</strong> de la estrategia, generando proyectos sin impacto real en el negocio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#7b1f3d;">Marcos de Gobierno de TI más utilizados</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Marco</th>
+                                    <th>Nombre completo</th>
+                                    <th>Enfoque principal</th>
+                                    <th>Aplicación típica</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>COBIT 2019</strong></td>
+                                    <td>Control Objectives for Information and Related Technologies</td>
+                                    <td>Gobierno y gestión integral de TI empresarial</td>
+                                    <td>Auditoría, cumplimiento regulatorio, control interno</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ITIL v4</strong></td>
+                                    <td>Information Technology Infrastructure Library</td>
+                                    <td>Gestión de servicios de TI (ITSM)</td>
+                                    <td>Mesa de ayuda, gestión de incidentes y cambios</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ISO/IEC 38500</strong></td>
+                                    <td>Norma internacional de Gobierno Corporativo de TI</td>
+                                    <td>Principios de dirección para la alta gerencia</td>
+                                    <td>Directorio y comités de TI</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TOGAF</strong></td>
+                                    <td>The Open Group Architecture Framework</td>
+                                    <td>Arquitectura empresarial</td>
+                                    <td>Diseño y transformación digital</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PMBOK / PRINCE2</strong></td>
+                                    <td>Gestión de proyectos</td>
+                                    <td>Control de proyectos de TI</td>
+                                    <td>Implementación de ERP, migraciones, desarrollos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#7b1f3d;">Los 5 Dominios del Gobierno de TI (COBIT)</h5>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div style="border-left:4px solid #7b1f3d;" class="ps-3 mb-3">
+                                <h6 style="color:#7b1f3d;">1. Alineación Estratégica</h6>
+                                <p class="small mb-0">Garantiza que los planes de TI reflejen y apoyen los objetivos del negocio.</p>
+                            </div>
+                            <div style="border-left:4px solid #7b1f3d;" class="ps-3 mb-3">
+                                <h6 style="color:#7b1f3d;">2. Entrega de Valor</h6>
+                                <p class="small mb-0">Asegura que TI cumpla lo prometido y optimice el retorno de las inversiones.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="border-left:4px solid #7b1f3d;" class="ps-3 mb-3">
+                                <h6 style="color:#7b1f3d;">3. Gestión de Recursos</h6>
+                                <p class="small mb-0">Optimiza la inversión y gestión de personas, aplicaciones, infraestructura e información.</p>
+                            </div>
+                            <div style="border-left:4px solid #7b1f3d;" class="ps-3 mb-3">
+                                <h6 style="color:#7b1f3d;">4. Gestión de Riesgos</h6>
+                                <p class="small mb-0">Identifica, evalúa y mitiga los riesgos tecnológicos con tolerancia definida.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="border-left:4px solid #7b1f3d;" class="ps-3 mb-3">
+                                <h6 style="color:#7b1f3d;">5. Medición del Desempeño</h6>
+                                <p class="small mb-0">Monitorea y evalúa la estrategia, los procesos y el desempeño de los servicios de TI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#7b1f3d;">Estructura de toma de decisiones en Gobierno de TI</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Órgano</th>
+                                    <th>Rol en el Gobierno de TI</th>
+                                    <th>Decisiones típicas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Directorio</strong></td>
+                                    <td>Supervisión estratégica de TI</td>
+                                    <td>Aprobación del presupuesto, política de riesgos digitales</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Comité de TI / CIO</strong></td>
+                                    <td>Dirección ejecutiva de TI</td>
+                                    <td>Portafolio de proyectos, arquitectura empresarial, PETI</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Gerencias de área</strong></td>
+                                    <td>Usuarios y patrocinadores</td>
+                                    <td>Requerimientos, prioridades funcionales</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Gerencia de TI</strong></td>
+                                    <td>Ejecución y operación</td>
+                                    <td>Infraestructura, seguridad, soporte, proyectos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Auditoría interna</strong></td>
+                                    <td>Control y cumplimiento</td>
+                                    <td>Revisión de controles, auditorías de sistemas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+ 
+            <hr class="divisor-tema">
+ 
+            <!-- ══════════════════════════════════════
+                 TEMA 2: ALINEAMIENTO ESTRATÉGICO
+            ══════════════════════════════════════ -->
+            <div id="tema2">
+                <div class="tema-header th-azul">
+                    <span class="numero">02</span>
+                    <div>
+                        <h3>Alineamiento Estratégico de TI y Creación de Valor</h3>
+                        <p>Vincular la estrategia de tecnología con los objetivos del negocio para generar ventaja competitiva</p>
+                    </div>
+                </div>
+ 
+                <p>
+                    El <strong>alineamiento estratégico de TI</strong> es el proceso de asegurar que los planes,
+                    proyectos e inversiones en tecnología estén directamente vinculados con los objetivos, prioridades
+                    y modelo de negocio de la organización. Cuando existe alineamiento real, TI deja de ser un
+                    <em>costo operativo</em> y se convierte en un <em>habilitador de valor y diferenciación competitiva</em>.
+                </p>
+ 
+                <div class="bloque">
+                    <h5 style="color:#1f3d7b;">Modelo de Alineamiento Estratégico de TI (Henderson & Venkatraman)</h5>
+                    <p class="small">Este modelo clásico plantea que el alineamiento ocurre en cuatro cuadrantes que deben estar en equilibrio dinámico:</p>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0f4ff; border:1px solid #1f3d7b;">
+                                <span class="mini-badge" style="background:#1f3d7b; color:#fff;">Negocio</span>
+                                <h6 style="color:#1f3d7b;">Estrategia de Negocio</h6>
+                                <p class="small mb-0">¿A qué mercados vamos? ¿Qué propuesta de valor ofrecemos? ¿Cómo competimos? Define la dirección organizacional.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0f4ff; border:1px solid #1f3d7b;">
+                                <span class="mini-badge" style="background:#1f3d7b; color:#fff;">TI</span>
+                                <h6 style="color:#1f3d7b;">Estrategia de TI</h6>
+                                <p class="small mb-0">¿Qué tecnologías adoptamos? ¿En qué capacidades digitales invertimos? ¿Cómo posicionamos TI externamente?</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0f4ff; border:1px solid #1f3d7b;">
+                                <span class="mini-badge" style="background:#2c7c4e; color:#fff;">Negocio</span>
+                                <h6 style="color:#1f3d7b;">Infraestructura Organizacional</h6>
+                                <p class="small mb-0">Estructura, procesos y competencias del negocio que soportan la ejecución de la estrategia.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0f4ff; border:1px solid #1f3d7b;">
+                                <span class="mini-badge" style="background:#2c7c4e; color:#fff;">TI</span>
+                                <h6 style="color:#1f3d7b;">Infraestructura de TI</h6>
+                                <p class="small mb-0">Sistemas, aplicaciones, datos y plataformas que soportan los procesos y estrategia de TI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#1f3d7b;">Cómo TI Crea Valor para el Negocio</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Tipo de Valor</th>
+                                    <th>Descripción</th>
+                                    <th>Ejemplo concreto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>💰 Reducción de costos</strong></td>
+                                    <td>Automatización de procesos manuales y eliminación de redundancias.</td>
+                                    <td>Un ERP reduce el tiempo de cierre contable de 15 días a 3 días.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>📈 Incremento de ingresos</strong></td>
+                                    <td>TI habilita nuevos canales, productos digitales o mercados.</td>
+                                    <td>Un ecommerce incrementa ventas un 35% al abrir canal online.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>⚡ Agilidad operativa</strong></td>
+                                    <td>Mayor velocidad de respuesta ante cambios del mercado.</td>
+                                    <td>Nube híbrida permite lanzar nuevos servicios en días, no meses.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🎯 Mejora en la toma de decisiones</strong></td>
+                                    <td>Datos en tiempo real para decisiones más precisas y rápidas.</td>
+                                    <td>Dashboard SIG reduce el tiempo de análisis gerencial de 2 días a 2 horas.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>😊 Experiencia del cliente</strong></td>
+                                    <td>TI mejora la interacción, personalización y satisfacción del cliente.</td>
+                                    <td>CRM con IA incrementa el NPS de 42 a 68 en 12 meses.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🛡️ Gestión de riesgos</strong></td>
+                                    <td>Controles tecnológicos que protegen activos y evitan pérdidas.</td>
+                                    <td>Sistema de ciberseguridad evita brechas que costarían millones.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#1f3d7b;">Herramientas para el Alineamiento Estratégico</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div style="border-left:4px solid #1f3d7b;" class="ps-3 mb-3">
+                                <h6 style="color:#1f3d7b;">Plan Estratégico de TI (PETI)</h6>
+                                <p class="small mb-0">Documento que traduce la estrategia del negocio en iniciativas, proyectos y presupuestos de TI para un horizonte de 3 a 5 años.</p>
+                            </div>
+                            <div style="border-left:4px solid #1f3d7b;" class="ps-3 mb-3">
+                                <h6 style="color:#1f3d7b;">Balanced Scorecard de TI</h6>
+                                <p class="small mb-0">Adapta el BSC de Kaplan & Norton a TI con cuatro perspectivas: financiera, cliente, procesos internos y aprendizaje.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="border-left:4px solid #1f3d7b;" class="ps-3 mb-3">
+                                <h6 style="color:#1f3d7b;">Portafolio de Proyectos de TI</h6>
+                                <p class="small mb-0">Gestión estructurada de iniciativas tecnológicas según su valor estratégico, riesgo y retorno de inversión (ROI).</p>
+                            </div>
+                            <div style="border-left:4px solid #1f3d7b;" class="ps-3 mb-3">
+                                <h6 style="color:#1f3d7b;">OKRs de TI</h6>
+                                <p class="small mb-0">Objetivos y Resultados Clave (OKRs) aplicados a TI para medir el impacto directo de las iniciativas tecnológicas en la estrategia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <hr class="divisor-tema">
+ 
+            <!-- ══════════════════════════════════════
+                 TEMA 3: GESTIÓN DE PROCESOS
+            ══════════════════════════════════════ -->
+            <div id="tema3">
+                <div class="tema-header th-verde">
+                    <span class="numero">03</span>
+                    <div>
+                        <h3>Gestión de Procesos</h3>
+                        <p>Modelado, mejora y automatización de procesos de negocio apoyados en TI</p>
+                    </div>
+                </div>
+ 
+                <p>
+                    La <strong>Gestión de Procesos de Negocio (BPM — Business Process Management)</strong> es la
+                    disciplina que permite a las organizaciones <em>diseñar, documentar, ejecutar, monitorear y
+                    mejorar continuamente</em> sus procesos de negocio, apoyándose en tecnología de información.
+                    Un proceso bien gestionado reduce desperdicios, mejora la experiencia del cliente y libera
+                    capacidad para actividades de mayor valor.
+                </p>
+ 
+                <div class="bloque">
+                    <h5 style="color:#2c7c4e;">El Ciclo de Vida BPM</h5>
+                    <div class="row g-3 text-center">
+                        <div class="col">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0fff5; border:1px solid #2c7c4e;">
+                                <div style="font-size:1.6rem;">🔍</div>
+                                <h6 class="mt-1" style="color:#2c7c4e;">1. Identificar</h6>
+                                <p class="small mb-0">Mapear los procesos existentes y su impacto en el negocio.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center" style="font-size:1.4rem; color:#2c7c4e; max-width:30px;">→</div>
+                        <div class="col">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0fff5; border:1px solid #2c7c4e;">
+                                <div style="font-size:1.6rem;">📐</div>
+                                <h6 class="mt-1" style="color:#2c7c4e;">2. Diseñar</h6>
+                                <p class="small mb-0">Modelar el proceso actual (AS-IS) y el proceso mejorado (TO-BE).</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center" style="font-size:1.4rem; color:#2c7c4e; max-width:30px;">→</div>
+                        <div class="col">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0fff5; border:1px solid #2c7c4e;">
+                                <div style="font-size:1.6rem;">⚙️</div>
+                                <h6 class="mt-1" style="color:#2c7c4e;">3. Implementar</h6>
+                                <p class="small mb-0">Desplegar el proceso mejorado con soporte tecnológico (BPMS, RPA).</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center" style="font-size:1.4rem; color:#2c7c4e; max-width:30px;">→</div>
+                        <div class="col">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0fff5; border:1px solid #2c7c4e;">
+                                <div style="font-size:1.6rem;">📊</div>
+                                <h6 class="mt-1" style="color:#2c7c4e;">4. Monitorear</h6>
+                                <p class="small mb-0">Medir KPIs del proceso: tiempo, costo, calidad y satisfacción.</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center justify-content-center" style="font-size:1.4rem; color:#2c7c4e; max-width:30px;">→</div>
+                        <div class="col">
+                            <div class="p-3 rounded-3 h-100" style="background:#f0fff5; border:1px solid #2c7c4e;">
+                                <div style="font-size:1.6rem;">🔄</div>
+                                <h6 class="mt-1" style="color:#2c7c4e;">5. Optimizar</h6>
+                                <p class="small mb-0">Mejorar continuamente con base en datos reales y retroalimentación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#2c7c4e;">Tipos de Procesos en la Organización</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Descripción</th>
+                                    <th>Ejemplos</th>
+                                    <th>Sistema de soporte</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>🎯 Estratégicos</strong></td>
+                                    <td>Definen la dirección y objetivos de la organización.</td>
+                                    <td>Planificación estratégica, gobierno corporativo</td>
+                                    <td>SIG, Tableros BSC</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🔄 Operativos (Core)</strong></td>
+                                    <td>Generan directamente el producto o servicio que entrega valor al cliente.</td>
+                                    <td>Ventas, producción, entrega, atención al cliente</td>
+                                    <td>ERP, CRM, SCM</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>🛠️ De Soporte</strong></td>
+                                    <td>Habilitan los procesos operativos sin ser parte del core del negocio.</td>
+                                    <td>Contabilidad, RRHH, TI, legal, mantenimiento</td>
+                                    <td>ERP, ITSM (ITIL)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#2c7c4e;">Herramientas y Notaciones para la Gestión de Procesos</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">BPMN 2.0</h6>
+                                <p class="small mb-0">Notación estándar internacional para modelar procesos de negocio de forma visual y ejecutable. Permite representar flujos, decisiones, roles y excepciones.</p>
+                            </div>
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">Diagrama de Flujo de Datos (DFD)</h6>
+                                <p class="small mb-0">Representa cómo los datos entran, se transforman y salen de un sistema. Útil para analizar el flujo de información entre procesos.</p>
+                            </div>
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">Value Stream Mapping (VSM)</h6>
+                                <p class="small mb-0">Herramienta Lean para identificar actividades que agregan y no agregan valor en un proceso, con el objetivo de eliminar desperdicios.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">BPMS (Business Process Management Suite)</h6>
+                                <p class="small mb-0">Software especializado que permite modelar, ejecutar, monitorear y mejorar procesos. Ejemplos: Bizagi, IBM BPM, Appian, Camunda.</p>
+                            </div>
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">Process Mining</h6>
+                                <p class="small mb-0">Técnica que extrae automáticamente el flujo real de un proceso desde los logs de los sistemas de información, revelando desviaciones y cuellos de botella ocultos.</p>
+                            </div>
+                            <div style="border-left:4px solid #2c7c4e;" class="ps-3 mb-3">
+                                <h6 style="color:#2c7c4e;">Six Sigma + BPM</h6>
+                                <p class="small mb-0">Combina la metodología DMAIC de Six Sigma con BPM para reducir defectos y variabilidad en procesos críticos, apoyados en datos e indicadores.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="bloque">
+                    <h5 style="color:#2c7c4e;">KPIs clave en la Gestión de Procesos</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th>KPI</th>
+                                    <th>¿Qué mide?</th>
+                                    <th>Meta típica</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Tiempo de ciclo</strong></td>
+                                    <td>Duración total desde el inicio hasta el fin del proceso.</td>
+                                    <td>Reducción del 20-40% con optimización</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tasa de error / reproceso</strong></td>
+                                    <td>Porcentaje de actividades que deben rehacerse por errores.</td>
+                                    <td>Menor al 2% en procesos maduros</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Costo por transacción</strong></td>
+                                    <td>Costo unitario de ejecutar una instancia del proceso.</td>
+                                    <td>Reducción progresiva con automatización</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nivel de automatización</strong></td>
+                                    <td>% de pasos del proceso ejecutados sin intervención humana.</td>
+                                    <td>Mayor al 70% en procesos repetitivos</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Satisfacción del cliente (CSAT)</strong></td>
+                                    <td>Percepción del cliente sobre el resultado del proceso.</td>
+                                    <td>Mayor a 4.0 / 5.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ─── RECURSOS ─── -->
+            <h3 class="mt-4">Recursos Educativos</h3>
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">🎬 Video: Gobierno de TI y COBIT</h5>
+                            <p class="card-text small flex-grow-1">Introducción al marco COBIT 2019 y su aplicación práctica en el gobierno de TI empresarial.</p>
+                            <a href="https://www.youtube.com/results?search_query=gobierno+TI+COBIT+2019+empresas" target="_blank" class="btn btn-custom mt-auto">Ver Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">🎬 Video: BPM y Gestión de Procesos</h5>
+                            <p class="card-text small flex-grow-1">Explicación del ciclo BPM, notación BPMN 2.0 y herramientas de process mining para la mejora continua.</p>
+                            <a href="https://www.youtube.com/results?search_query=BPM+gestion+procesos+negocio+BPMN" target="_blank" class="btn btn-custom mt-auto">Ver Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">📄 Lectura: Lapiedra Alcamí et al. (2016)</h5>
+                            <p class="card-text small flex-grow-1">Referencia del curso. Capítulos sobre alineamiento estratégico de TI, gobierno corporativo y gestión de procesos de negocio.</p>
+                            <a href="https://books.google.com.pe" target="_blank" class="btn btn-custom mt-auto">Leer Documento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- ─── ACTIVIDAD ─── -->
+            <div class="p-4 rounded-3 text-white" style="background: linear-gradient(90deg, #7b1f3d, #1f3d7b);">
+                <h5 style="color:#ffd700;">📝 Actividad Integradora de la Semana</h5>
+                <p class="mb-2">
+                    Elige una organización real o ficticia y desarrolla un análisis integrado de los tres temas:
+                </p>
+                <ol class="mb-1" style="font-size:0.92rem;">
+                    <li><strong>Gobierno de TI:</strong> ¿Qué marco aplicarías (COBIT, ITIL, ISO 38500)? Describe al menos dos estructuras de decisión.</li>
+                    <li><strong>Alineamiento:</strong> Identifica dos objetivos estratégicos del negocio y explica cómo TI los apoyaría con iniciativas concretas.</li>
+                    <li><strong>Gestión de Procesos:</strong> Elige un proceso operativo, modélalo en AS-IS y propón una mejora TO-BE con herramienta BPM.</li>
+                </ol>
+                <small style="color:#ffd700;">Entrega: inicio de la Semana 10 · Formato: informe en Word con diagramas (mín. 3 páginas)</small>
+            </div>
+ 
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2026 Universidad Peruana Los Andes | Gerencia de Sistemas de Información</p>
+    </footer>
+ 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
